@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Atelier</title>
+    <style>
+        .erreur {
+            color: red;
+        }
+    
+        .succes {
+            color: green;
+        }
+    </style>
+    <script src="inscription.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="accueil.html">home </a>
+            <a href="projetsettaches.html">projets et taches</a>
+            <a href="listeemployes.html">liste employes </a>
+            <a href="inscription.html">inscription </a>
+        </nav>
+        <hr>
+        <img src="assets/image.jpg" alt="texte affiche" width="50%" height="50%">
+    </header>
+    <section>
+        <h2>Inscription au site</h2>
+        <form id="inscriptionForm" method="get">
+<table>
+                <!-- Champ Nom -->
+<tr>
+    <td><label>Nom:</label></td>
+    <td><input name="lastname" type="text" id="nom"></td>
+    <td>
+        <div id="erreurNom" class="erreur"></div>
+        <div id="succesNom" class="succes"></div>
+    </td>
+</tr>
+
+<!-- Champ Prénom -->
+<tr>
+    <td><label>Prénom:</label></td>
+    <td><input name="firstname" type="text" id="prenom" ></td>
+    <td>
+        <div id="erreurPrenom" class="erreur"></div>
+        <div id="succesPrenom" class="succes"></div>
+    </td>
+</tr>
+
+<!-- Champ Email -->
+<tr>
+    <td><label>Email:</label></td>
+    <td><input name="user_mail" type="email" id="email"></td>
+    <td>
+        <div id="erreurEmail" class="erreur"></div>
+        <div id="succesEmail" class="succes"></div>
+    </td>
+</tr>
+
+<!-- Champ Téléphone -->
+<tr>
+    <td><label>Téléphone:</label></td>
+    <td><input name="phone_number" type="tel" id="telephone"></td>
+    <td>
+        <div id="erreurTelephone" class="erreur"></div>
+        <div id="succesTelephone" class="succes"></div>
+    </td>
+</tr>
+
+<!-- Champ Date de Naissance -->
+<tr>
+    <td><label>Date de Naissance:</label></td>
+    <td><input id="dateOfBirth" name="birth_date" type="date" ></td>
+    <td>
+        <div id="erreurDateOfBirth" class="erreur"></div>
+        <div id="succesDateOfBirth" class="succes"></div>
+    </td>
+</tr>
+
+<!-- Champ Mot de Passe -->
+<tr>
+    <td><label>Mot de Passe:</label></td>
+    <td><input name="user_pwd" type="password" id="password"></td>
+    <td>
+        <div id="erreurPassword" class="erreur"></div>
+        <div id="succesPassword" class="succes"></div>
+    </td>
+</tr>
+
+
+
+ 
+              
+ </table>
+            <div>
+                <input type="submit" value="S'inscrire" >
+            </div>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <p>contact</p>
+        <a href="mailto:islem@esprit.tn">link</a>
+        <p>adresse: Gazela</p>
+    </footer>
+</body>
+</html>
